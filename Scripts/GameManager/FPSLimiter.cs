@@ -7,14 +7,13 @@ public class FPSLimiter : MonoBehaviour
     #region Methods
 
     [SerializeField]
-    int _frameRate = 5f;
-    
+    int _framesPerSecond = 60;
+
     // Start is called before the first frame update
     void Start()
     {
         // Set the target frame rate
-        Application.targetFrameRate = _frameRate;
+        Application.targetFrameRate = _framesPerSecond;
     }
-    
     #endregion Methods
 }
