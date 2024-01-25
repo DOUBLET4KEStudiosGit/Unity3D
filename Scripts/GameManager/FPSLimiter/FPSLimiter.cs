@@ -6,7 +6,7 @@ public class FPSLimiter : MonoBehaviour
 {
     #region Fields
 
-    public int _framesPerSecond;
+    public int _framesPerSecond;  // This variable stores the desired frames per second (FPS).
 
     #endregion Fields
 
@@ -15,7 +15,7 @@ public class FPSLimiter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Set the target frame rate
+        // Set the target frame rate to the value stored in _framesPerSecond.
         Application.targetFrameRate = _framesPerSecond;
     }
 
