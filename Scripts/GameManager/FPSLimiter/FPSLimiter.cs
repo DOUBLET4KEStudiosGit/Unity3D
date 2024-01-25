@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class FPSLimiter : MonoBehaviour
 {
-    #region Methods
+    #region Fields
 
-    [SerializeField]
-    int _framesPerSecond = 60;
+    public int _framesPerSecond;
+
+    #endregion Fields
+
+    #region Methods
 
     // Start is called before the first frame update
     void Start()
@@ -15,5 +18,6 @@ public class FPSLimiter : MonoBehaviour
         // Set the target frame rate
         Application.targetFrameRate = _framesPerSecond;
     }
+
     #endregion Methods
 }
